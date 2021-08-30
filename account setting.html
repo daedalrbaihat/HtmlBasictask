@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> 
+    Account Sitting 
+</title>
+
+<style type="text/css">
+        
+</style>
+<link href="style.css" type="text/css" rel="StyleSheet"/>
+
+<script type="text/javascript">
+    function Toggle(value){
+    switch(value){
+    case 'General':
+    document.getElementById('General').style.display="block";
+    document.getElementById('Password').style.display="none";
+    document.getElementById('Info').style.display="none";
+    document.getElementById('Notification').style.display="none";
+    break;
+    case 'Password':
+    document.getElementById('General').style.display="none";
+    document.getElementById('Password').style.display=" block";
+    document.getElementById('Info').style.display="none";
+    document.getElementById('Notification').style.display="none";
+    
+    break;
+    case 'Info':
+    document.getElementById('General').style.display="none";
+    document.getElementById('Password').style.display="none";
+    document.getElementById('Info').style.display="block";
+    document.getElementById('Notification').style.display="none";
+    break;
+    case 'Notification':
+    document.getElementById('General').style.display="none";
+    document.getElementById('Password').style.display="none";
+    document.getElementById('Info').style.display="none";
+    document.getElementById('Notification').style.display="block";
+    break;
+    }
+    }
+    </script>
+    
+</head>
+<body>
+
+
+<div  class="general ">
+    <spam>
+        Account Settings
+    </spam>
+</div>
+<div class="menu" >
+<div  style="float: left;" >
+    <div class="option" onclick="Toggle('General')">
+    <spam> Gneral</spam>
+
+    </div>
+
+<div  class="option" onclick="Toggle('Password')">
+<spam>
+Change Password
+</spam>
+</div>
+<div class="option" onclick="Toggle('Info')">
+    <spam>
+        Info
+    </spam>
+</div>
+<div class="option"onclick="Toggle('Notification')" >
+    <spam>
+        Notifications
+    </spam>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="user" id="General">
+
+<div>
+<img src='C:\Users\winows\Desktop\html task\img\avatar.png'>
+</div>
+
+<div class="bot1">
+<button class="b1" > Upload new photo
+</button>
+<button class="b2"> Reset
+
+</button>
+<p> Allowed JPG, GIF or PING .Max size of 800k </p>
+</div>
+
+
+<div class=" select">
+<dive>
+    <label>
+   Username
+    </label>
+ <div > <input type="text">    </div> 
+    
+ <div><label>
+    Name
+         </label>
+         <div> <input type="text">    </div> 
+<div>
+         <label>
+            Email
+             </label>
+             <div> <input type="text">    </div> 
+             </div>
+
+             <div class="confirmEmail">
+            
+                   <span class="confirmText" > Your Email is not confirmed . please chece your inpox                   </span>
+
+                    <a href="" > Resend confirmation </a>
+             
+             </div>
+            <div><label>
+                Company
+                     </label>
+                     <div> <input type="text">    </div>
+
+
+                     <div class="save">
+                        <button class="b3" > Save Changes
+                        </button>
+                        <button class="b4" > cansel
+                        </button> 
+                     </div>
+
+        
+                       
+                    
+
+
+                     </div>
+                
+
+
+
+</div>
+</div>
+
+</div>
+
+
+<div style="display: none;" id="Password" >
+<div class="pp">
+
+    <div >
+        <label> Currecnt password  </label> </div>
+        <div>
+<input type="text">
+
+        </div>
+
+        <div>
+            <label> New Password </label> </div>
+            <div>
+    <input type="text">
+    
+            </div>
+            <div>
+                <label> Repeat New Password </label> </div>
+                <div>
+        <input type="text">
+
+        <div class="save">
+            <button class="b3" > Save Changes
+            </button>
+            <button class="b4" > cansel
+            </button> 
+         </div>
+        
+                </div>
+        
+    </div>
+
+    </div>
+
+
+
+
+<div style="display: none;" id="Info">
+
+    <div class="info1">
+        <div>
+    <label> Bio  </label> 
+        </div>
+        <div>
+<input type="text"   style="margin-bottom: 10px;
+border: 1px solid #cccccc;
+border-radius: 4px;
+color: #555555;
+width: 750px;
+height: 20px;"></div>
+
+    
+    <div>
+        <label for="info"> Birthday </label> </div>
+        <div>
+<input type="date" style="
+border: 1px solid  #cccccc;
+border-radius: 4px;
+color: #555555;
+width: 750px;
+height:27px;
+margin-bottom: 10px;
+">
+
+        </div>
+
+
+        <div>
+            <label> Country</label> </div>
+            <div>
+                <select id ="Country" name="country " style="
+    border: 1px solid  #cccccc;
+    border-radius: 4px;
+    color: #555555;
+    width: 750px;
+    height: 27px;
+    margin-bottom: 10px;
+     ">
+<option value="USA"> USA</option>
+
+    </select>
+</div>
+
+
+<div class="concat">
+
+    <span style="font-size: 28px; font-family: sans-serif;"> Concat</span>
+    <div>
+        <label > Phone</label>
+    </div>
+    <div>
+        <input type="tel"   style="
+        border: 1px solid  #cccccc;
+        border-radius: 4px;
+        color: #555555;
+        width: 750px;
+        height:27px;
+        margin-bottom: 10px;
+        ">
+
+    </div>
+    <div> 
+     <div><label > Website</label></div>   
+     <div> 
+         <input type="url"  style="
+         border: 1px solid  #cccccc;
+         border-radius: 4px;
+         color: #555555;
+         width: 750px;
+         height:27px;
+         margin-bottom: 10px;
+         "  >
+     </div>
+
+     <div class="save">
+        <button class="b3" > Save Changes
+        </button>
+        <button class="b4" > cansel
+        </button> 
+     </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
+<div style="display: none;" id="Notification">
+<div class="notificat">
+<span style=" font-size:35px ; font-family: sans-serif"> Activity</span>
+<div class="notstyle">
+<input type="checkbox" > Email me when someone comments on my article 
+</div>
+<div class="notstyle"> 
+<input type="checkbox"> Email me when someone answer my forum thread 
+</div>
+<div class="notstyle">
+<input type="checkbox"> Email me when someone follows me
+</div>
+
+
+</div>
+
+
+
+
+<div class="notificat">
+    <span style=" font-size:35px ; font-family: sans-serif"> Application</span>
+    <div class="notstyle">
+    <input type="checkbox" > News and announcements
+    </div>
+    <div class="notstyle"> 
+    <input type="checkbox"> weekly product updates
+    </div>
+    <div class="notstyle">
+    <input type="checkbox"> Weekly blog digest
+    </div>
+    <div class="save">
+        <button class="b3" > Save Changes
+        </button>
+</div>
+
+    </div>
+    
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</body>
+
+
+
+</html>
