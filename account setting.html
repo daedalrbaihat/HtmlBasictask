@@ -90,11 +90,11 @@ Change Password
 <img src='C:\Users\winows\Desktop\html task\img\avatar.png'>
 </div>
 
-<div class="bot1">
-<button class="b1" > Upload new photo
-</button>
-<button class="b2"> Reset
+<div class="buttonbar">
+<input type="file" id="upload" hidden/>
+<label for="upload" class="b1" > Upload New Photo</label>
 
+<button class="b2"> Reset
 </button>
 <p> Allowed JPG, GIF or PING .Max size of 800k </p>
 </div>
@@ -131,7 +131,7 @@ Change Password
                      <div> <input type="text">    </div>
 
 
-                     <div class="save">
+                     <div class="buttonbar2">
                         <button class="b3" > Save Changes
                         </button>
                         <button class="b4" > cansel
@@ -155,7 +155,7 @@ Change Password
 
 
 <div style="display: none;" id="Password" >
-<div class="pp">
+<div class="user">
 
     <div >
         <label> Currecnt password  </label> </div>
@@ -175,7 +175,7 @@ Change Password
                 <div>
         <input type="text">
 
-        <div class="save">
+        <div class="buttonbar2">
             <button class="b3" > Save Changes
             </button>
             <button class="b4" > cansel
@@ -193,30 +193,19 @@ Change Password
 
 <div style="display: none;" id="Info">
 
-    <div class="info1">
+    <div class="user">
         <div>
     <label> Bio  </label> 
         </div>
         <div>
-<input type="text"   style="margin-bottom: 10px;
-border: 1px solid #cccccc;
-border-radius: 4px;
-color: #555555;
-width: 750px;
-height: 20px;"></div>
+<input type="text"></div>
 
     
     <div>
         <label for="info"> Birthday </label> </div>
         <div>
-<input type="date" style="
-border: 1px solid  #cccccc;
-border-radius: 4px;
-color: #555555;
-width: 750px;
-height:27px;
-margin-bottom: 10px;
-">
+    
+<input type="date">
 
         </div>
 
@@ -224,14 +213,7 @@ margin-bottom: 10px;
         <div>
             <label> Country</label> </div>
             <div>
-                <select id ="Country" name="country " style="
-    border: 1px solid  #cccccc;
-    border-radius: 4px;
-    color: #555555;
-    width: 750px;
-    height: 27px;
-    margin-bottom: 10px;
-     ">
+                <select id ="Country" name="country " >
 <option value="USA"> USA</option>
 
     </select>
@@ -240,35 +222,21 @@ margin-bottom: 10px;
 
 <div class="concat">
 
-    <span style="font-size: 28px; font-family: sans-serif;"> Concat</span>
+    <span> Concat</span>
     <div>
         <label > Phone</label>
     </div>
     <div>
-        <input type="tel"   style="
-        border: 1px solid  #cccccc;
-        border-radius: 4px;
-        color: #555555;
-        width: 750px;
-        height:27px;
-        margin-bottom: 10px;
-        ">
+        <input type="tel">
 
     </div>
     <div> 
      <div><label > Website</label></div>   
      <div> 
-         <input type="url"  style="
-         border: 1px solid  #cccccc;
-         border-radius: 4px;
-         color: #555555;
-         width: 750px;
-         height:27px;
-         margin-bottom: 10px;
-         "  >
+         <input type="url" >
      </div>
 
-     <div class="save">
+     <div class="buttonbar2">
         <button class="b3" > Save Changes
         </button>
         <button class="b4" > cansel
@@ -293,41 +261,42 @@ margin-bottom: 10px;
 </div>
 
 
-<div style="display: none;" id="Notification">
-<div class="notificat">
-<span style=" font-size:35px ; font-family: sans-serif"> Activity</span>
-<div class="notstyle">
-<input type="checkbox" > Email me when someone comments on my article 
+<div style="display:none;" id="Notification">
+    
+<div class="user" >
+    <div>
+<span> Activity</span>
+<div >
+<input type="checkbox" >  <label>me when someone comments on my article </label> 
 </div>
-<div class="notstyle"> 
-<input type="checkbox"> Email me when someone answer my forum thread 
+<div >
 </div>
-<div class="notstyle">
-<input type="checkbox"> Email me when someone follows me
-</div>
-
-
+<input type="checkbox"> <label>me when someone answer my forum thread </label> 
+<div>
+<input type="checkbox"> <label>me when someone follows me</label>
 </div>
 
+</div>
 
 
 
-<div class="notificat">
-    <span style=" font-size:35px ; font-family: sans-serif"> Application</span>
-    <div class="notstyle">
-    <input type="checkbox" > News and announcements
+
+<div class="concat">
+    <span > Application</span>
+    <div >
+    <input type="checkbox" > <label>and announcements</label> 
     </div>
-    <div class="notstyle"> 
-    <input type="checkbox"> weekly product updates
+    <div> 
+    <input type="checkbox"> <label>weekly product updates</label>
     </div>
-    <div class="notstyle">
-    <input type="checkbox"> Weekly blog digest
+    <div >
+    <input type="checkbox"> <label>Weekly blog digest</label>
     </div>
-    <div class="save">
+    <div class="buttonbar2">
         <button class="b3" > Save Changes
         </button>
 </div>
-
+</div>
     </div>
     
 
